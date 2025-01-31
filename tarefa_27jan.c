@@ -105,7 +105,7 @@ void desliga() {
 void botao_callback_A(uint gpio, uint32_t eventos) {
     uint32_t current_time = to_ms_since_boot(get_absolute_time());
     if (current_time - last_irq_time_A > DEBOUNCE_DELAY) {
-        estado_atual = (estado_atual - 1 num_eventos) % num_eventos; // Avança para o próximo estado
+        estado_atual = (estado_atual - 1 + num_eventos) % num_eventos; // Avança para o próximo estado
         last_irq_time_A = current_time; // Atualiza o tempo do último evento
     }
 }
