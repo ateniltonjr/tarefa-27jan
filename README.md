@@ -61,16 +61,16 @@ Este projeto tem como objetivo consolidar os conceitos relacionados ao uso de in
 
 ## 📂 Estrutura do Repositório
   O repositório contém os arquivos e pastas:
-      tarefa_27jan.c
-      CMakeList.txt
-      diagram.json
-      pico_sdk_import.cmake
-      ws2818b.pio.h
-      diagram.json
-      wokwi.toml
-      README.MD
-      .gitignore
-      .VSCODE
+      tarefa_27jan.'c'
+      CMakeList. 'txt'
+      diagram. 'json'
+      pico_sdk_import. 'cmake'
+      ws2818b.pio. 'h'
+      diagram. 'json'
+      wokwi. 'toml'
+      README. 'MD'
+      . 'gitignore'
+      . 'VSCODE'
 
    Ao clonar dentro do VS Code será criado o arquivo build.
 
