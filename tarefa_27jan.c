@@ -93,32 +93,6 @@ void cor(const uint indice, const uint8_t r, const uint8_t g, const uint8_t b) {
     leds[indice].B = b;
 }
 
-// Função para desligar todos os LEDs
-void desliga() {
-    for (uint i = 0; i < NUM_LEDS; ++i) {
-        cor(i, 0, 0, 0);
-    }
-    bf();
-}
-
-// Função de callback para o botão A (avançar estado)
-void botao_callback_A(uint gpio, uint32_t eventos) {
-    uint32_t current_time = to_ms_since_boot(get_absolute_time());
-    if (current_time - last_irq_time_A > DEBOUNCE_DELAY) {
-        estado_atual = (estado_atual - 1 + num_eventos) % num_eventos; // Avança para o próximo estado
-        last_irq_time_A = current_time; // Atualiza o tempo do último evento
-    }
-}
-
-// Função de callback para o botão B (retroceder estado)
-void botao_callback_B(uint gpio, uint32_t eventos) {
-    uint32_t current_time = to_ms_since_boot(get_absolute_time());
-    if (current_time - last_irq_time_B > DEBOUNCE_DELAY) {
-        estado_atual = (estado_atual + 1) % num_eventos; // Retrocede para o estado anterior
-        last_irq_time_B = current_time; // Atualiza o tempo do último evento
-    }
-}
-
 // Funções para os diferentes efeitos
 void number0() {
     int mat1[5][5][3] = {
@@ -390,8 +364,8 @@ int main() {
     while (1) {
         state(1, 0, 0, 200);
         state(0, 0, 0, 1);
-        if (!gpio_get(BOTAO_B)) debounce_botao(BOTAO_B, &last_irq_time_B, 1);
-        if (!gpio_get(BOTAO_A)) debounce_botao(BOTAO_A, &last_irq_time_A, -1);
+        if (!gpio_get(BOTAO_B)) debounce_botao(BOTAO_B, &last_irq_time_B, -1);
+        if (!gpio_get(BOTAO_A)) debounce_botao(BOTAO_A, &last_irq_time_A, +1);
         sleep_ms(10);
     }
 }
