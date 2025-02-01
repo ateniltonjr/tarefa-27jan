@@ -12,7 +12,7 @@
 #define GREEN 12   // Pino do LED verde
 #define RED 13 // Pino do LED vermelho
 
-int num_eventos = 11; // Número de eventos para alternar entre os botões
+int num_eventos = 10; // Número de eventos para alternar entre os botões
 int estado_atual = 0; // Estado atual do sistema (0 - Desliga, 1 - Chuva)
 
 // Tempo mínimo entre interrupções para debouncing
@@ -283,25 +283,6 @@ void number9() {
     bf();
 }
 
-void number10() {
-    int mat1[5][5][3] = {
-        {{255, 255, 0}, {0, 0, 0}, {255, 255, 0}, {255, 255, 0}, {255, 255, 0}},
-        {{255, 255, 0}, {0, 0, 0}, {255, 255, 0}, {0, 0, 0}, {255, 255, 0}},
-        {{255, 255, 0}, {0, 0, 0}, {255, 255, 0}, {0, 0, 0}, {255, 255, 0}},
-        {{255, 255, 0}, {0, 0, 0}, {255, 255, 0}, {0, 0, 0}, {255, 255, 0}},
-        {{255, 255, 0}, {0, 0, 0}, {255, 255, 0}, {255, 255, 0}, {255, 255, 0}}
-    };
-
-    // Exibir a matriz
-    for (int linha = 0; linha < 5; linha++) {
-        for (int cols = 0; cols < 5; cols++) {
-            int posicao = getIndex(linha, cols);
-            cor(posicao, mat1[linha][cols][0], mat1[linha][cols][1], mat1[linha][cols][2]);
-        }
-    }
-    bf();
-}
-
 void atualizar_estado() {
     switch (estado_atual) {
         case 0:
@@ -333,9 +314,6 @@ void atualizar_estado() {
             break;
         case 9:
             number9();
-            break;
-        case 10:
-            number10();
             break;
     }
 }
