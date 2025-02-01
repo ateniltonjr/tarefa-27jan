@@ -26,7 +26,7 @@ int num_eventos = 10; // Número de eventos para alternar entre os botões
 int estado_atual = 0; // Estado atual do sistema que será incrementado ou decrementado.
 
 // Tempo mínimo entre interrupções para debouncing
-#define DEBOUNCE_DELAY 210 // Milissegundos
+#define DEBOUNCE_DELAY 100 // Milissegundos
 
 // Variáveis para controlar o debouncing
 volatile uint32_t last_irq_time_A = 0;
@@ -305,33 +305,43 @@ void atualizar_estado() {
     switch (estado_atual) {
         case 0:
             number0();
+            printf("0\n");
             break;
         case 1:
             number1();
+            printf("1\n");
             break;
         case 2:
             number2();
+            printf("2\n");
             break;
         case 3:
             number3();
+            printf("3\n");
             break;
         case 4:
             number4();
+            printf("4\n");
             break;
         case 5:
             number5();
+            printf("5\n");
             break;
         case 6:
             number6();
+            printf("6\n");
             break;
         case 7:
             number7();
+            printf("7\n");
             break;
         case 8:
             number8();
+            printf("8\n");
             break;
         case 9:
             number9();
+            printf("9\n");
             break;
     }
 }
@@ -362,8 +372,10 @@ void iniciar_botoes() {
 }
 // Função principal
 int main() {
+    stdio_init_all();
     controle(PINO_MATRIZ); //Controle do pino 7
     iniciar_botoes(); // Permite a interação com os botões
+    printf("0\n");
     number0(); //Define o estado inicial da matriz de leds como o número 0
 
     while (1) {
