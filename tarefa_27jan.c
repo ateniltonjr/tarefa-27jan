@@ -13,8 +13,8 @@ por: Atenilton Santos de Souza Júnior
 #define NUM_LEDS 25    // Número total de LEDs na matriz
 #define BOTAO_A 5      // Pino do Botão A
 #define BOTAO_B 6      // Pino do Botão B
-#define BLUE 11        // Pino do LED azul
-#define GREEN 12         // Pino do LED verde
+#define BLUE 12        // Pino do LED azul
+#define GREEN 11         // Pino do LED verde
 #define RED 13         // Pino do LED vermelho
 
 
@@ -26,7 +26,7 @@ int num_eventos = 10; // Número de eventos para alternar entre os botões
 int estado_atual = 0; // Estado atual do sistema que será incrementado ou decrementado.
 
 // Tempo mínimo entre interrupções para debouncing
-#define DEBOUNCE_DELAY 100 // Milissegundos
+#define DEBOUNCE_DELAY 200 // Milissegundos
 
 // Variáveis para controlar o debouncing
 volatile uint32_t last_irq_time_A = 0;
@@ -379,8 +379,8 @@ int main() {
     number0(); //Define o estado inicial da matriz de leds como o número 0
 
     while (1) {
-        state(1, 0, 0, 180); // O led vermelho vermelho tipo RGB fica 180 ms ligado
-        state(0, 0, 0, 20);  // Todos os leds ficam 20 ms desligados
+        state(1, 0, 0, 100); // O led vermelho vermelho tipo RGB fica 100 ms ligado
+        state(0, 0, 0, 100);  // Todos os leds ficam 100 ms desligados
 
         // Ativa a interrupção do botão B e decrementa um estado.
         if (!gpio_get(BOTAO_B)) debounce_botao(BOTAO_B, &last_irq_time_B, -1);
