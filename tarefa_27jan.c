@@ -26,7 +26,7 @@ int num_eventos = 10; // Número de eventos para alternar entre os botões
 int estado_atual = 0; // Estado atual do sistema que será incrementado ou decrementado.
 
 // Tempo mínimo entre interrupções para debouncing
-#define DEBOUNCE_DELAY 200 // Milissegundos
+#define DEBOUNCE_DELAY 300 // Milissegundos
 
 // Variáveis para controlar o debouncing
 volatile uint32_t last_irq_time_A = 0;
