@@ -379,8 +379,6 @@ int main() {
     number0(); //Define o estado inicial da matriz de leds como o número 0
 
     while (1) {
-        state(1, 0, 0, 100); // O led vermelho vermelho tipo RGB fica 100 ms ligado
-        state(0, 0, 0, 100);  // Todos os leds ficam 100 ms desligados
 
         // Ativa a interrupção do botão B e decrementa um estado.
         if (!gpio_get(BOTAO_B)) debounce_botao(BOTAO_B, &last_irq_time_B, -1);
@@ -390,6 +388,9 @@ int main() {
 
         /* O próximo ciclo será sempre depois de 210 ms devido ao led ficar 180 ms ligado
         10 ms desligado e o aguardo de 10 ms para o próximo ciclo*/
+
+        state(1, 0, 0, 100); // O led vermelho vermelho tipo RGB fica 100 ms ligado
+        state(0, 0, 0, 100);  // Todos os leds ficam 100 ms desligados
     }
     return (0); //Este ponto nunca será alcançado.
 }
