@@ -79,11 +79,10 @@ Aqui está um video de demonstração do funcionamento do projeto na prática:
 [Link para o vídeo de demonstração](#)  
 
 ## 🤝 Contribuições  
-Desenvolvido por Atenilton S. de Souza Júnior.
 Sinta-se à vontade para contribuir com melhorias e sugestões!  
 
 ## 📄 Licença  
 Este projeto está licenciado sob a [MIT License](LICENSE).  
 
 ## 📧 Contato  
-Desenvolvido por [Atenilton santos de Souza Júnior] — [ateniltonjr09@gmail.com](ateniltonjr09@gmail.com)  
+Desenvolvido por Atenilton santos de Souza Júnior — [ateniltonjr09@gmail.com](ateniltonjr09@gmail.com)  
