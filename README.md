@@ -53,7 +53,7 @@ Este projeto tem como objetivo consolidar os conceitos relacionados ao uso de in
 
    O clone do repositório pode ser realizado abrindo o terminal com o comando " Ctrl + ' " e digitar: git clone <link do repositório>.
    Ou manualmente atraves com do botão "clonar repositório" + copiar o link do repositório + enter.
-   Certifique-se de que o caminho não é muito longo para evitar erros.
+   Certifique-se de que o caminho da pasta não é muito longo para evitar erros.
     
 3. Certifique-se de que a placa BitDogLab está corretamente configurada.
 4. Compile e carregue o código no microcontrolador RP2040 com botão Run.   
