@@ -1,5 +1,5 @@
 # tarefa-27jan
-tarefa do dia 27 de janeiro.
+tarefa 1 - Aula Sincrona do dia 27 de janeiro - Unidade 4 - Microcontroladores.
 
 Atividade avaliativa proposta pelo Cepedi como parte dos critérios de avaliação do curso de capacitação em software e sistemas embarcados (Embarcatech).
 
@@ -60,17 +60,22 @@ Este projeto tem como objetivo consolidar os conceitos relacionados ao uso de in
 5. Execute o projeto e interaja com os botões para verificar as funcionalidades.  
 
 ## 📂 Estrutura do Repositório
-  O repositório contém os arquivos e pastas:
-      tarefa_27jan.'c'
-      CMakeList. 'txt'
-      diagram. 'json'
-      pico_sdk_import. 'cmake'
-      ws2818b.pio. 'h'
-      diagram. 'json'
-      wokwi. 'toml'
-      README. 'MD'
-      . 'gitignore'
-      . 'VSCODE'
+O repositório contém os seguintes arquivos e pastas:
+
+Este repositório contém os seguintes arquivos e pastas:
+
+- `tarefa_27jan.c` - Arquivo de código-fonte.
+- `CMakeLists.txt` - Arquivo de configuração do CMake.
+- `diagrama.txt` - Diagrama em formato texto.
+- `diagrama.json` - Diagrama em formato JSON.
+- `pico_sdk_import.cmake` - Arquivo de configuração do SDK do Pico.
+- `ws2818b.pio` - Arquivo de configuração de periférico (PIO) para o WS2818B.
+- `diagrama.h` - Cabeçalho do diagrama.
+- `wokwi.toml` - Arquivo de configuração do Wokwi.
+- `LEIA-ME.md` - Este arquivo de leitura.
+- `.gitignore` - Arquivo de configuração para o Git ignorar arquivos específicos.
+- `.vscode/` - Configurações do Visual Studio Code.
+Esses itens organizam o projeto e fornecem a configuração e os recursos necessários para a execução e desenvolvimento.
 
    Ao clonar dentro do VS Code será criado o arquivo build.
 
@@ -85,4 +90,4 @@ Sinta-se à vontade para contribuir com melhorias e sugestões!
 Este projeto está licenciado sob a [MIT License](LICENSE).  
 
 ## 📧 Contato  
-Desenvolvido por Atenilton santos de Souza Júnior — [ateniltonjr09@gmail.com](ateniltonjr09@gmail.com)  
+Para entrar em contato, envie um e-mail para [ateniltonjr09@gmail.com](mailto:ateniltonjr09@gmail.com).  
