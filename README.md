@@ -84,10 +84,10 @@ Aqui está um video de demonstração do funcionamento do projeto na prática:
 [Link para o vídeo de demonstração](https://drive.google.com/drive/folders/1YZkF36ELfY9g0guP7N8KRBltC8AQbchp?usp=drive_link)  
 
 ## 🤝 Contribuições  
-Sinta-se à vontade para contribuir com melhorias e sugestões!  
+Sinta-se à vontade para contribuir com melhorias e sugestões!
 
 ## 📄 Licença  
-Este projeto está licenciado sob a [MIT License](LICENSE).  
+Este projeto está licenciado sob a [MIT License](LICENSE).
 
 ## 📧 Contato  
-Para entrar em contato, envie um e-mail para [ateniltonjr09@gmail.com](mailto:ateniltonjr09@gmail.com).  
+Para entrar em contato, envie um e-mail para [ateniltonjr09@gmail.com](ateniltonjr09@gmail.com).  
